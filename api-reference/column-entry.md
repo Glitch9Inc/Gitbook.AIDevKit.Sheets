@@ -1,3 +1,0 @@
-# ColumnEntry API
-
-(Coming soon)

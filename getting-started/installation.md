@@ -1,44 +1,40 @@
 # Installation
 
-## Prerequisites
+## Install via Unity Package Manager
 
-Before installing AIDevKit.Sheets, ensure you have:
+### 1. Install from Git URL (Recommended)
 
-* Unity 6.0 or higher
-* UIToolkit package enabled
-* .NET Standard 2.1 support
+In Unity Editor:
+1. Open `Window > Package Manager`
+2. Click `+` button
+3. Select `Add package from git URL`
+4. Enter the Git URL
 
-## Installation Methods
+### 2. Install as Local Package
 
-### Option 1: Unity Package Manager (UPM)
+1. Clone or download the project
+2. In Unity Editor, open `Window > Package Manager`
+3. Click `+` > `Add package from disk`
+4. Select `package.json` file
 
-1. Open Unity Package Manager (`Window > Package Manager`)
-2. Click the `+` button in the top-left corner
-3. Select `Add package from git URL...`
-4. Enter the following URL:
-   ```
-   https://github.com/YourOrg/AIDevKit.Sheets.git
-   ```
+## Dependencies
 
-### Option 2: Manual Installation
+### Required
+- **Unity 6.0+**
+- **UIToolkit** (Built-in Unity)
 
-1. Download the latest release from [GitHub Releases](https://github.com/YourOrg/AIDevKit.Sheets/releases)
-2. Extract the package to your project's `Assets/Glitch9/AIDevKit.Sheets/` folder
-3. Unity will automatically detect and import the package
-
-### Option 3: Unity Asset Store
-
-Coming soon!
+### Optional
+- **Newtonsoft.Json**: JSON serialization
+  - Define Symbol: `UNITY_NEWTONSOFT_JSON`
+- **UniTask**: Async operation optimization
 
 ## Verify Installation
 
-After installation, verify that AIDevKit.Sheets is working correctly:
+After installation, check the menu:
+- `Window > AI Dev Kit > Spreadsheet Editor`
+- `Window > AI Dev Kit > Localization Manager`
 
-1. Open Unity Editor
-2. Navigate to `Window > AI Dev Kit > Sheets Editor`
-3. The spreadsheet editor window should open successfully
+## Assembly Definitions
 
-## Next Steps
+The package consists of the following assemblies:
 
-* [Quick Start Guide](quick-start.md) - Create your first sheet
-* [Project Setup](project-setup.md) - Configure your project settings

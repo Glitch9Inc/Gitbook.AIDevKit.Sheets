@@ -1,3 +1,0 @@
-# Localization System
-
-(Coming soon)

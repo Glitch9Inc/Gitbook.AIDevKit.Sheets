@@ -1,3 +1,0 @@
-# Column Types
-
-(Coming soon)

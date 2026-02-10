@@ -1,3 +1,0 @@
-# TableEntry API
-
-(Coming soon)

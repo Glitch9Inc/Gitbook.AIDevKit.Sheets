@@ -1,3 +1,0 @@
-# Column Management
-
-(Coming soon)

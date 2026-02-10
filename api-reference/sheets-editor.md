@@ -1,3 +1,0 @@
-# SheetsEditor API
-
-(Coming soon)

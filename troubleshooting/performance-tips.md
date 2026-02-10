@@ -1,3 +1,0 @@
-# Performance Tips
-
-(Coming soon)

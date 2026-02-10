@@ -1,3 +1,0 @@
-# LocalizationManager API
-
-(Coming soon)

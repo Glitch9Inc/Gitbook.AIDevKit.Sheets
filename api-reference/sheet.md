@@ -1,3 +1,0 @@
-# Sheet API
-
-(Coming soon)

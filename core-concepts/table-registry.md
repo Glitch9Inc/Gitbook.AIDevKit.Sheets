@@ -1,3 +1,0 @@
-# Table Registry
-
-(Coming soon)
