@@ -1,0 +1,20 @@
+# Text Revision
+
+Refine the wording of a text cell with AI — clean up, rephrase, or fix a string in place
+(this edits text; it does not translate). Requires an AI provider/API key
+(see [Providers & API Keys](providers.md)).
+
+## How to use
+
+1. Select a text cell.
+2. Run **Revise** (side panel / cell action).
+3. The AI returns improved text; apply it to the cell.
+
+> 📷 **Image — `text-revision.png`:** A text cell selected with the Revise action and the
+> before/after text shown.
+
+## Notes
+
+* Cell context and your configured text model steer the result.
+* The change goes through the normal edit pipeline, so it is undoable.
+* To translate (not rewrite) text, use [AI Translation](translation.md).

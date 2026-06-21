@@ -7,6 +7,9 @@ API key. Translation can also use Google / Microsoft services.
 
 `Window > AI Sheets > Preferences` (Project Settings).
 
+> 📷 **Image — `provider-settings.png`:** The AI Sheets Preferences (Project Settings) page with
+> the provider + API key + model fields.
+
 AI Sheets shares provider configuration with the **AI DevKit** core, so keys you set there are
 reused across features.
 

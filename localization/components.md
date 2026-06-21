@@ -9,6 +9,9 @@ The entry point for no-code setup. Add **LocalizationManager** to a GameObject i
 scene, configure its table sources in the Inspector, and it loads + initializes localization
 on `Awake`. (Equivalent to calling `Localization.InitializeAsync()` yourself.)
 
+> 📷 **Image — `localization-components.png`:** A GameObject Inspector showing a
+> `TextLocalization` component with its localization key field set.
+
 ## Component reference
 
 | Component | Localizes |

@@ -6,6 +6,9 @@ want; it plans and executes multiple steps using built-in tools.
 Open it from the **side panel** in the [Spreadsheet Editor](../spreadsheet-editor/README.md).
 Requires an AI provider/API key (see [Providers & API Keys](providers.md)).
 
+> 📷 **Image — `spreadsheet-agent.png`:** The Agent panel with a natural-language task typed in
+> and the resulting changes applied to the table.
+
 ## Example tasks
 
 * "Fill all missing Korean translations."

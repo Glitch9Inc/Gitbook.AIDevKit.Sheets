@@ -16,6 +16,9 @@ load and query the data at runtime.
    * **ScriptableObject** model — a `ScriptableObject` subclass.
 5. Use that generated type at runtime to load the table.
 
+> 📷 **Image — `database-table-codegen.png`:** A Database table with typed columns next to the
+> class-generation UI (model type PureCSharp / ScriptableObject, namespace/class name).
+
 ## Cross-Reference to Localization
 
 A Database column can reference keys in a **Localization** table, so a field (e.g. an item's

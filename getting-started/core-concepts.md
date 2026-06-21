@@ -17,32 +17,35 @@ Table
 
 ## Two table categories
 
-| | **Localization** | **Database** |
+| | **Database** | **Localization** |
 |---|---|---|
-| Columns | One per language (Locale) | Typed columns (your schema) |
-| Value | Translated text per locale | Typed field values |
-| Runtime entry point | `Localization` + `Tr()` / components | `Database.LoadAsync<T>` / `TryGet` |
-| Typical use | UI strings, dialogue | Items, skills, quests, stats |
+| Purpose | Model your game data | Localize display text |
+| Columns | Typed columns (your schema) | One per language (Locale) |
+| Value | Typed field values | Translated text per locale |
+| Runtime entry point | `Database.LoadAsync<T>` / `TryGet` | `Localization` + `Tr()` / components |
+| Typical use | Items, skills, quests, stats | UI strings, dialogue |
 
-You choose the category when creating a table.
+You choose the category when creating a table. **Database** is the primary data model;
+**Localization** supplies the localized text that data and UI display.
 
 ## Cross-Reference (Database → Localization)
 
 A Database cell can **reference a key in a Localization table** instead of storing raw text.
-At runtime the value resolves to the current locale's translation. This lets a single item
-row drive localized display names without duplicating strings.
+At runtime the value resolves to the current locale's translation. This is the main integration
+point between the two: a single item row drives a localized display name without duplicating
+strings — the dependency flows **Database → Localization**.
 
 ## Editor vs Runtime
 
 * **Editor** (the Spreadsheet window): create/edit tables, AI generation & translation,
   import/export, and **C# class generation** for Database tables.
-* **Runtime** (your game): load and read the data through `Localization` and `Database`,
-  or via the localization components.
+* **Runtime** (your game): load and read data through `Database`, and localized text through
+  `Localization` / the localization components.
 
 > C# model classes for Database tables are produced by the editor's code generator; at
 > runtime you load tables *as* those generated types.
 
 ## Next steps
 
-* [Localization → Runtime API](../localization/runtime-api.md)
 * [Database → Runtime API](../database/runtime-api.md)
+* [Localization → Runtime API](../localization/runtime-api.md)

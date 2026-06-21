@@ -18,6 +18,9 @@ Generate table content from natural-language prompts, right in the
 2. Open the generation action in the side panel and enter a prompt.
 3. The AI uses the table **schema** (column names + types) to produce values that fit.
 
+> 📷 **Image — `content-generation.png`:** The generation action in the side panel with a prompt
+> entered and target cells selected in the grid.
+
 ## Per-column settings
 
 Image/audio columns carry generation settings (model, image size, voice, output folder).
