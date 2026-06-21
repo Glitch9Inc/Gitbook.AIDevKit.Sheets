@@ -1,56 +1,38 @@
-# AIDevKit.Sheets
+---
+description: A spreadsheet editor and AI-powered data tool, built into the Unity Editor.
+---
 
-**AIDevKit.Sheets** is a powerful spreadsheet and localization management system built for Unity 6.
+# AI Sheets
 
-## Features
+**AI Sheets** brings a full spreadsheet editor into Unity and combines it with AI to
+automate content generation, translation, and data management — without leaving the editor.
 
-### 📊 Spreadsheet Editor
-- Modern UIToolkit-based editor interface
-- CSV/JSON import/export support
-- Real-time data editing and validation
-- Complete Undo/Redo system
+It is built around one engine (Table → Column → Row → Cell) that powers two workflows:
 
-### 🌍 Localization System
-- Fluent API-based translation system (`.Tr()`)
-- Multi-language voice support (`.TrVoiced()`)
-- Asset localization (`.TrAsset<T>()`)
-- AI-powered real-time translation (`.TrRealtime()`)
-- Pluralization, gender, and format variants
+* **Localization** — multi-language string tables, AI/Google/Microsoft translation, and
+  drop-in Unity components that update text, sprites, audio and more when the locale changes.
+* **Database** — model your game data (items, skills, quests, dialogue…) as typed tables,
+  generate C# model classes from them, and load/query the data at runtime.
 
-### 🗄️ Database Tables
-- ScriptableObject-based data tables
-- Runtime data query API
-- Type-safe data access
+On top of both, an **AI layer** can generate rows and cells from prompts, fill missing
+translations, and run a **Spreadsheet Agent** that edits your sheets from natural-language tasks.
 
-## Quick Start
+## What you can build
 
-```csharp
-// Initialize localization
-Localization.Initialize();
-
-// Basic translation
-string text = "menu.title".Tr("UI");
-
-// Voiced text
-var voiced = "npc.greeting".TrVoiced("Dialogues");
-string text = voiced.text;
-AudioClip voice = await voiced.LoadAsync();
-
-// Load database
-var itemTable = SheetDatabase.Load<ItemTable>("Items");
-var item = itemTable.GetRow("apple");
-```
+* Localization pipelines with AI-assisted translation
+* Item / skill / quest / dialogue databases driven by typed tables
+* Procedural content tables filled by AI
+* Data validation and QA workflows
+* Runtime localization with the included components
 
 ## Requirements
 
-- Unity 6.0 or higher
-- UIToolkit
-- Newtonsoft.Json (optional)
-- UniTask (for async operations)
+* Unity 6 (6000.x)
+* [UniTask](https://github.com/Cysharp/UniTask)
+* [Newtonsoft.Json](https://docs.unity3d.com/Packages/com.unity.nuget.newtonsoft-json@latest)
+* Addressables — optional, recommended for localized asset loading
 
-## Documentation
+## Next steps
 
-- **Getting Started**: Installation and basic concepts
-- **Spreadsheet Editor**: Editor usage guide
-- **Database**: Runtime data access
-- **Localization**: Localization API reference
+* New here? Start with the [Quick Start](getting-started/quick-start.md).
+* Want the mental model first? Read [Core Concepts](getting-started/core-concepts.md).
