@@ -14,11 +14,14 @@ skills, quests). See [Core Concepts](../getting-started/core-concepts.md).
 
 **Do AI features require an API key?**
 Yes. Configure a provider/key in `Window > AI Sheets > Preferences`. See
-[Providers & API Keys](../ai-features/providers.md).
+[Providers & API Keys](../setup/providers.md).
 
 **How do I use a Database table at runtime?**
-Generate a C# model class from the table, then `await Database.LoadAsync<T>(sheetId, source)`
-and query with `Database.TryGet<T>(...)`. See [Database → Runtime API](../database/runtime-api.md).
+Generate a C# model class from the table. The easy path: mark the table for **GameDB**, generate the
+`GameDB` class, add a **Database Manager** to your scene, then read `GameDB.<Accessor>` — see
+[GameDB & Database Manager](../database/gamedb.md). Or load it yourself with
+`await Database.LoadAsync<T>(sheetId, source)` and query with `Database.TryGet<T>(...)` — see
+[Database → Runtime API](../database/runtime-api.md).
 
 **Why doesn't my localized text update when I change language?**
 Ensure localization is initialized (a `LocalizationManager`, or `Localization.InitializeAsync()`)

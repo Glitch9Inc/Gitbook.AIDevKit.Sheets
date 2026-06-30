@@ -41,11 +41,13 @@ string greet  = "hello".Tr().Gender(TextGender.Feminine).Format(playerName).ToSt
 string text = "unknown.key".Tr().FallBack("Default Text");
 ```
 
-## Dates & timespans
+## Dates & weekdays
+
+Date and weekday formatting use .NET `CultureInfo` for the current locale — no table required:
 
 ```csharp
-string when     = System.DateTime.Now.Tr(TimeFormat.FullDate);
-string duration = System.TimeSpan.FromMinutes(90).Tr();
+string when = System.DateTime.Now.Tr(TimeFormat.FullDate); // locale-formatted date/time
+string day  = System.DateTime.Now.DayOfWeek.Tr();          // localized weekday name
 ```
 
 ## Notes

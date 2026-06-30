@@ -18,19 +18,25 @@ Edit it like a normal spreadsheet: typed columns, multi-select, copy/paste, find
 
 ## 2. Database at runtime
 
-Generate a C# model class from your Database table (in the editor), then load and query it:
+Generate a C# model class from your Database table (in the editor). Then either use the generated
+**GameDB** facade with a Database Manager (recommended), or load tables yourself:
 
 ```csharp
 using Glitch9.AI.Sheets;
 
+// Recommended: mark the table for GameDB, generate, add a Database Manager to your scene, then:
+if (GameDB.Items.TryGet("sword", out var sword))
+    Debug.Log(sword.Name);
+
+// Or load manually with the low-level Database API:
 // "items" is the sheetId you choose; ItemModel is the generated model class.
 var sheet = await Database.LoadAsync<ItemModel>("items", source);
-
-if (Database.TryGet<ItemModel>("items", "sword", out var sword))
-    Debug.Log(sword.Name);
+if (Database.TryGet<ItemModel>("items", "sword", out var swordManual))
+    Debug.Log(swordManual.Name);
 ```
 
-See [Database → Runtime API](../database/runtime-api.md) for sources and model generation.
+See [GameDB & Database Manager](../database/gamedb.md) for the generated path, and
+[Database → Runtime API](../database/runtime-api.md) for sources and the manual API.
 
 ## 3. Localize the display text
 
@@ -55,7 +61,7 @@ no code needed. A Database row can also **reference** a localization key for its
 * **Translate** missing localization cells.
 * **Spreadsheet Agent** — describe a task in plain language and let it edit the sheet.
 
-These require an AI provider/API key — see [Providers & API Keys](../ai-features/providers.md).
+These require an AI provider/API key — see [Providers & API Keys](../setup/providers.md).
 
 ## Next steps
 

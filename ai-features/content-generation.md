@@ -2,7 +2,7 @@
 
 Generate table content from natural-language prompts, right in the
 [Spreadsheet Editor](../spreadsheet-editor/README.md). Requires an AI provider/API key
-(see [Providers & API Keys](providers.md)).
+(see [Providers & API Keys](../setup/providers.md)).
 
 ## What you can generate
 

@@ -12,7 +12,7 @@ them at runtime with the `Localization` API or drop-in components.
 1. Create a table with the **Localization** category.
 2. Add a **Locale** column per language you support.
 3. Add rows (keys) and fill translations — or let AI fill the missing cells
-   (see [AI Translation](../ai-features/translation.md)).
+   (see [Translation](translation.md)).
 4. (Optional) Generate localization key snippets, or create keys from existing scene text
    (Scene Text Localization).
 

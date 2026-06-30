@@ -11,7 +11,7 @@ Pick the translation backend:
 * **Google Translate**
 * **Microsoft Translator**
 
-Each needs the corresponding API key configured (see [Providers & API Keys](../ai-features/providers.md)).
+Each needs the corresponding API key configured (see [Providers & API Keys](../setup/providers.md)).
 
 ## Caching
 

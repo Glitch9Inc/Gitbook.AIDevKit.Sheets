@@ -40,7 +40,7 @@ You can also sync with **Google Sheets** (push/pull) directly from the editor.
 ## AI in the editor
 
 * [Content Generation](../ai-features/content-generation.md) — fill rows/cells from prompts.
-* [AI Translation](../ai-features/translation.md) — fill missing localization cells.
+* [Translation](../localization/translation.md) — fill missing localization cells.
 * [Spreadsheet Agent](../ai-features/agent.md) — natural-language, multi-step edits.
 
 ## Registries (Window > AI Sheets)

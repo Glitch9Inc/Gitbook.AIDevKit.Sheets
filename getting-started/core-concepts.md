@@ -22,7 +22,7 @@ Table
 | Purpose | Model your game data | Localize display text |
 | Columns | Typed columns (your schema) | One per language (Locale) |
 | Value | Typed field values | Translated text per locale |
-| Runtime entry point | `Database.LoadAsync<T>` / `TryGet` | `Localization` + `Tr()` / components |
+| Runtime entry point | `GameDB.*` + Database Manager (or low-level `Database.LoadAsync<T>`) | `Localization` + `Tr()` / components |
 | Typical use | Items, skills, quests, stats | UI strings, dialogue |
 
 You choose the category when creating a table. **Database** is the primary data model;

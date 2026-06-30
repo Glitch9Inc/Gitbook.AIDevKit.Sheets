@@ -2,7 +2,7 @@
 
 Refine the wording of a text cell with AI — clean up, rephrase, or fix a string in place
 (this edits text; it does not translate). Requires an AI provider/API key
-(see [Providers & API Keys](providers.md)).
+(see [Providers & API Keys](../setup/providers.md)).
 
 ## How to use
 
@@ -17,4 +17,4 @@ Refine the wording of a text cell with AI — clean up, rephrase, or fix a strin
 
 * Cell context and your configured text model steer the result.
 * The change goes through the normal edit pipeline, so it is undoable.
-* To translate (not rewrite) text, use [AI Translation](translation.md).
+* To translate (not rewrite) text, use [Translation](../localization/translation.md).

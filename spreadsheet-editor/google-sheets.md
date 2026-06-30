@@ -10,7 +10,7 @@ sync with your Unity tables.
 
 Follow the in-editor Google Sheets guide to authorize and link a spreadsheet (spreadsheet ID +
 sheet name). Configure the Google Translate / API keys in
-[Providers & API Keys](../ai-features/providers.md) if you also use Google translation.
+[Providers & API Keys](../setup/providers.md) if you also use Google translation.
 
 ## Push / Pull
 

@@ -3,8 +3,11 @@
 All runtime types live in the `Glitch9.AI.Sheets` namespace. The entry point is the static
 `Database` facade.
 
-> There is **no global initialization** for Database. You load tables on demand and they are
-> registered by a `sheetId` string you choose.
+> This is the **manual / low-level** path: you load tables yourself and register them under a
+> `sheetId` string you choose. For the generated, zero-boilerplate path (typed `GameDB.*` accessors +
+> a Database Manager component), see [GameDB & Database Manager](gamedb.md).
+
+> There is **no global initialization** for this path — tables are loaded on demand.
 
 ## Load & register a table
 
@@ -20,6 +23,8 @@ DatabaseSheet<ItemModel> sheet = await Database.LoadAsync<ItemModel>("items", so
 * `"items"` is the **sheetId** — your handle for later lookups (the same model type can back
   several tables, so the id, not the type, is the key).
 * `source` is an `ITableSource` (see **Sources** below).
+* Optional: `Database.LoadAsync<ItemModel>("items", source, loadAllObjectReferences: false)` defers
+  loading of asset references (Sprites, AudioClips, …) until you ask for them.
 
 You can also register an already-built sheet:
 
@@ -33,6 +38,9 @@ Database.Register("items", sheet);
 if (Database.TryGet<ItemModel>("items", "sword", out var sword))
     Debug.Log(sword.Name);
 
+// Throws if the sheet isn't registered (or wrong type) or the key is missing:
+ItemModel required = Database.GetRequired<ItemModel>("items", "sword");
+
 DatabaseSheet<ItemModel> items = Database.GetSheet<ItemModel>("items");
 
 bool loaded = Database.IsRegistered("items");
@@ -45,9 +53,12 @@ A table is loaded from an `ITableSource`:
 
 | Source | From |
 |---|---|
-| `AssetTableSource` | A `TextAsset` (e.g. in Resources or a direct asset reference) |
-| `CsvTableSource` / `TsvTableSource` / `JsonTableSource` | A CSV / TSV / JSON file |
-| `GoogleSheetSource` | A Google Sheet |
+| `AssetTableSource` | A `SheetTableAsset` — the in-project (offline) table asset |
+| `CsvTableSource` / `TsvTableSource` / `JsonTableSource` | A CSV / TSV / JSON `TextAsset`, file path, or URL |
+| `GoogleSheetSource` | A Google Sheet (spreadsheet id + sheet name) |
+
+When you use [GameDB](gamedb.md), these sources are built for you from each table's settings
+(`GameDbConfig.CreateSource`), so you rarely construct them by hand.
 
 ## Typed values & AOT note
 

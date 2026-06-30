@@ -4,7 +4,7 @@ The Spreadsheet Agent edits your sheet from a **natural-language task**. You des
 want; it plans and executes multiple steps using built-in tools.
 
 Open it from the **side panel** in the [Spreadsheet Editor](../spreadsheet-editor/README.md).
-Requires an AI provider/API key (see [Providers & API Keys](providers.md)).
+Requires an AI provider/API key (see [Providers & API Keys](../setup/providers.md)).
 
 > 📷 **Image — `spreadsheet-agent.png`:** The Agent panel with a natural-language task typed in
 > and the resulting changes applied to the table.
@@ -35,4 +35,4 @@ The agent operates through a fixed tool set, so its actions are predictable:
 * Be specific about the target (which table/columns/rows).
 * Review the agent's changes — they go through the normal edit pipeline and are undoable.
 * For one-off generation/translation, the dedicated actions
-  ([Content Generation](content-generation.md), [AI Translation](translation.md)) are simpler.
+  ([Content Generation](content-generation.md), [Translation](../localization/translation.md)) are simpler.

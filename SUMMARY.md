@@ -19,6 +19,7 @@
 ## Database
 
 * [Overview](database/README.md)
+* [GameDB & Database Manager](database/gamedb.md)
 * [Runtime API](database/runtime-api.md)
 
 ## Localization
@@ -27,14 +28,17 @@
   * [Unity Components](localization/components.md)
   * [Realtime Translation](localization/realtime-translation.md)
 * [Runtime API (Tr)](localization/runtime-api.md)
+* [Translation](localization/translation.md)
 
 ## AI Features
 
 * [Content Generation](ai-features/content-generation.md)
-* [AI Translation](ai-features/translation.md)
 * [Text Revision](ai-features/text-revision.md)
 * [Spreadsheet Agent](ai-features/agent.md)
-* [Providers & API Keys](ai-features/providers.md)
+
+## Setup
+
+* [Providers & API Keys](setup/providers.md)
 
 ## Reference
 
