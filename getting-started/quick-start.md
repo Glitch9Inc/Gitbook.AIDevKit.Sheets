@@ -6,8 +6,7 @@ A 5-minute tour: open the editor, make a table, and use the data at runtime.
 
 `Window > AI Sheets > Spreadsheet`  (shortcut: **Ctrl/Cmd + Shift + T**)
 
-> 📷 **Image — `quickstart-window.png`:** The Unity `Window` menu open with `AI Sheets >
-> Spreadsheet` highlighted, and the opened Spreadsheet window beside it.
+<figure><img src="../.gitbook/assets/quickstart-window.png" alt=""><figcaption></figcaption></figure>
 
 Create a table and pick a category:
 

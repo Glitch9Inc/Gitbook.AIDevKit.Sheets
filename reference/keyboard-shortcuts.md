@@ -2,7 +2,7 @@
 
 The full list is in the editor: toolbar **Edit > Shortcuts…**
 
-> 📷 **Image — `shortcuts-window.png`:** The Shortcuts window listing all spreadsheet shortcuts.
+<figure><img src="../.gitbook/assets/shortcuts-window.png" alt=""><figcaption></figcaption></figure>
 
 ## Common shortcuts
 

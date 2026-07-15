@@ -4,8 +4,7 @@ Fill missing translations in a [Localization](README.md) table automatically. Th
 editor-time, table-based workflow. (To translate dynamic/UGC text at runtime, see
 [Realtime Translation](realtime-translation.md).)
 
-> 📷 **Image — `translation.png`:** A Localization table with missing cells selected and the
-> translate action (backend dropdown) in the side panel.
+<figure><img src="../.gitbook/assets/translation.png" alt=""><figcaption></figcaption></figure>
 
 ## Backends
 

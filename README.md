@@ -20,8 +20,7 @@ single item row drives its localized display name without duplicating strings.
 On top of both, an **AI layer** generates rows and cells from prompts, fills missing
 translations, and runs a **Spreadsheet Agent** that edits your sheets from natural-language tasks.
 
-> 📷 **Image — `hero.png`:** Hero shot of the AI Sheets window with a populated table (ideally
-> showing both a Database table and a Localization table tab), AI side panel visible.
+<figure><img src=".gitbook/assets/hero.png" alt=""><figcaption></figcaption></figure>
 
 ## What you can build
 

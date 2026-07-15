@@ -8,8 +8,7 @@ Open it with `Window > AI Sheets > Spreadsheet` (**Ctrl/Cmd + Shift + T**).
 * **Grid** — the table; edit cells inline, multi-select, copy/paste.
 * **Side panel** — selection details, generation actions, and the Spreadsheet Agent.
 
-> 📷 **Image — `window-layout.png`:** The Spreadsheet window with callout labels on the
-> Menu/Toolbar, the grid, and the side panel.
+<figure><img src="../.gitbook/assets/window-layout.png" alt=""><figcaption></figcaption></figure>
 
 ## Editing tables
 

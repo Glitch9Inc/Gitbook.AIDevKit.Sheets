@@ -3,8 +3,7 @@
 Push to and pull from Google Sheets directly from the editor, keeping a shared team sheet in
 sync with your Unity tables.
 
-> 📷 **Image — `google-sheets-setup.png`:** The Google Sheets setup/guide panel with the
-> spreadsheet ID / sheet name fields.
+<figure><img src="../.gitbook/assets/google-sheets-setup.png" alt=""><figcaption></figcaption></figure>
 
 ## Setup
 

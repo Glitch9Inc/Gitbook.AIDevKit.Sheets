@@ -3,8 +3,7 @@
 Round-trip tables to and from files. Both live in the toolbar's **File** menu
 (`Import From…` / `Export As…`).
 
-> 📷 **Image — `import-export-menu.png`:** The File menu expanded, showing the Import From… and
-> Export As… submenus with the format list (CSV/TSV/JSON/XLIFF/ScriptableObject).
+<figure><img src="../.gitbook/assets/import-export-menu.png" alt=""><figcaption></figcaption></figure>
 
 ## Formats
 

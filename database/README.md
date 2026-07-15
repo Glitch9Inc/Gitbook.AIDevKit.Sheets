@@ -13,14 +13,13 @@ load and query the data at runtime.
 3. Fill rows manually, with [AI generation](../ai-features/content-generation.md), or by import.
 4. **Configure the C# model class** in the table's **DB Model** settings tab:
    * If no class is linked yet: **Generate New DB Model Class** (opens a popup to name it and pick a
-     model type) or **Find Existing DB Model Class** (link a class you already wrote).
+     model type) or **Link Existing DB Model Class** (link a class you already wrote).
    * **PureCSharp** model — a plain class. **ScriptableObject** model — a `ScriptableObject` subclass.
    * Once linked, the tab shows the class info plus **Update DB Class** and **Generate GameDB Code**.
 5. Load the table at runtime — either the **GameDB** typed facade (recommended) or the low-level
    `Database` API (manual). See below.
 
-> 📷 **Image — `database-table-codegen.png`:** A Database table with typed columns next to the
-> DB Model settings tab (model type PureCSharp / ScriptableObject, namespace/class name).
+<figure><img src="../.gitbook/assets/database-table-codegen.png" alt=""><figcaption></figcaption></figure>
 
 ## Two ways to load at runtime
 

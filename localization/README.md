@@ -4,8 +4,7 @@ A Localization table is a **key column + one column per language (Locale)**. You
 keys and translations in the [Spreadsheet Editor](../spreadsheet-editor/README.md), then read
 them at runtime with the `Localization` API or drop-in components.
 
-> 📷 **Image — `localization-table.png`:** A Localization table with a key column and several
-> language columns filled in; highlight a missing (empty) cell.
+<figure><img src="../.gitbook/assets/localization-table.png" alt=""><figcaption></figcaption></figure>
 
 ## Editor workflow
 

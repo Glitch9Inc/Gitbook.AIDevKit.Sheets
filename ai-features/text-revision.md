@@ -10,8 +10,7 @@ Refine the wording of a text cell with AI — clean up, rephrase, or fix a strin
 2. Run **Revise** (side panel / cell action).
 3. The AI returns improved text; apply it to the cell.
 
-> 📷 **Image — `text-revision.png`:** A text cell selected with the Revise action and the
-> before/after text shown.
+<figure><img src="../.gitbook/assets/text-revision.png" alt=""><figcaption></figcaption></figure>
 
 ## Notes
 

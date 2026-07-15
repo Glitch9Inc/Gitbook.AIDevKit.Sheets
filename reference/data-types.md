@@ -12,6 +12,30 @@ CSV/TSV/JSON.
 A column can be an **enum**. Register the enum in `Window > AI Sheets > Enum Types` so it is
 selectable as a column type and editable via a dropdown.
 
+### Enum columns in import headers
+
+When importing (CSV/TSV/Google Sheets), a header can declare an enum column with a type token:
+
+```
+Type : Enum<NodeType>
+Type : Enum<My.Namespace.NodeType>
+```
+
+The enum type name is resolved against the enums in your project's loaded assemblies:
+
+* **Simple name** (`Enum<NodeType>`) — only **top-level public** enums are considered. Internal
+  enums and enums nested inside other types are excluded, so enums buried in unrelated packages
+  (Unity's own assemblies contain several enums with common names) cannot hijack the name. If
+  several top-level public enums share the name, enums in your own code win over Unity/System
+  assemblies.
+* **Qualified name** (`Enum<My.Namespace.NodeType>`, `Enum<OuterClass.NestedEnum>`) — matched
+  exactly by full name, and **internal and nested enums are allowed**. Use this form to target
+  an internal or nested enum, or to disambiguate when multiple enums share a simple name.
+
+If no matching enum is found, the column is imported as **String** — values are preserved as
+plain text and a warning is logged. After adding (or registering) the enum in your project,
+re-import to restore the column's Enum type.
+
 ## Unity types
 
 Asset and value types are supported, including:
